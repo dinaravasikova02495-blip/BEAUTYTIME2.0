@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Beauty Time — Парикмахерские услуги</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-services-hair">
+    <!-- ===== ШАПКА ===== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">BEAUTY <span>TIME</span></a>
+            <div class="right-icons">
+                <a href="profile.html" class="profile-icon"><i class="fas fa-user-circle"></i></a>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <label for="menu-toggle" class="menu-overlay"></label>
+                <div class="nav-links">
+                    <label for="menu-toggle" class="close-menu"><i class="fas fa-times"></i></label>
+                    <a href="../index.html"><i class="fas fa-home"></i> Главная</a>
+                    <a href="about.html"><i class="fas fa-spa"></i> О нас</a>
+                    <div class="dropdown" id="services-dropdown">
+                        <div class="dropdown-header" onclick="toggleDropdown(event)">
+                            <span><i class="fas fa-cut"></i> Услуги</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="services-hair.html">Парикмахерские услуги</a>
+                            <a href="services-lashes.html">Ресницы</a>
+                            <a href="services-makeup.html">Make up</a>
+                            <a href="services-brows.html">Уход за бровями</a>
+                            <a href="services-nails.html">Ногтевой сервис</a>
+                        </div>
+                    </div>
+                    <a href="reviews.html"><i class="fas fa-star"></i> Отзывы</a>
+                    <a href="contacts.html"><i class="fas fa-phone-alt"></i> Контакты</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== СТРАНИЦА УСЛУГ ===== -->
+    <div class="service-hero">
+        <div class="container">
+            <h1>Парикмахерские услуги</h1>
+            <p>Профессиональный уход за волосами. Стрижки, окрашивание, укладки и восстановление</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="service-category">
+            <h3>Женские стрижки</h3>
+            <ul class="price-list">
+                <li class="price-item"><span class="service-name">Модельная стрижка (короткие волосы)</span><span
+                        class="service-price">1800 ₽</span></li>
+                <li class="price-item"><span class="service-name">Модельная стрижка (средние волосы)</span><span
+                        class="service-price">2200 ₽</span></li>
+                <li class="price-item"><span class="service-name">Модельная стрижка (длинные волосы)</span><span
+                        class="service-price">2600 ₽</span></li>
+                <li class="price-item"><span class="service-name">Стрижка челки</span><span class="service-price">500
+                        ₽</span></li>
+                <li class="price-item"><span class="service-name">Укладка феном</span><span class="service-price">1200
+                        ₽</span></li>
+                <li class="price-item"><span class="service-name">Вечерняя укладка</span><span
+                        class="service-price">2500 ₽</span></li>
+                <li class="price-item"><span class="service-name">Свадебная прическа</span><span
+                        class="service-price">4000 ₽</span></li>
+            </ul>
+        </div>
+
+        <div class="service-category">
+            <h3>Мужские стрижки</h3>
+            <ul class="price-list">
+                <li class="price-item"><span class="service-name">Мужская модельная стрижка</span><span
+                        class="service-price">1500 ₽</span></li>
+                <li class="price-item"><span class="service-name">Стрижка машинкой</span><span
+                        class="service-price">1000 ₽</span></li>
+                <li class="price-item"><span class="service-name">Стрижка бороды и усов</span><span
+                        class="service-price">800 ₽</span></li>
+            </ul>
+        </div>
+
+        <div class="service-category">
+            <h3>Детские стрижки</h3>
+            <ul class="price-list">
+                <li class="price-item"><span class="service-name">Детская стрижка (до 7 лет)</span><span
+                        class="service-price">1000 ₽</span></li>
+                <li class="price-item"><span class="service-name">Детская стрижка (7-12 лет)</span><span
+                        class="service-price">1200 ₽</span></li>
+                <li class="price-item"><span class="service-name">Детская стрижка (12+)</span><span
+                        class="service-price">1400 ₽</span></li>
+            </ul>
+        </div>
+
+        <div class="service-category">
+            <h3>Окрашивание</h3>
+            <ul class="price-list">
+                <li class="price-item"><span class="service-name">Тонирование (короткие)</span><span
+                        class="service-price">2000 ₽</span></li>
+                <li class="price-item"><span class="service-name">Тонирование (средние)</span><span
+                        class="service-price">2500 ₽</span></li>
+                <li class="price-item"><span class="service-name">Тонирование (длинные)</span><span
+                        class="service-price">3000 ₽</span></li>
+                <li class="price-item"><span class="service-name">Окрашивание корней</span><span
+                        class="service-price">2000 ₽</span></li>
+                <li class="price-item"><span class="service-name">Полное окрашивание (короткие)</span><span
+                        class="service-price">2500 ₽</span></li>
+                <li class="price-item"><span class="service-name">Полное окрашивание (средние)</span><span
+                        class="service-price">3500 ₽</span></li>
+                <li class="price-item"><span class="service-name">Полное окрашивание (длинные)</span><span
+                        class="service-price">4500 ₽</span></li>
+                <li class="price-item"><span class="service-name">Мелирование</span><span class="service-price">3500
+                        ₽</span></li>
+                <li class="price-item"><span class="service-name">Балаяж / Шатуш</span><span class="service-price">4500
+                        ₽</span></li>
+                <li class="price-item"><span class="service-name">Сложное колорирование (2+ тона)</span><span
+                        class="service-price">от 6000 ₽</span></li>
+                <li class="price-item"><span class="service-name">AirTouch</span><span class="service-price">5000
+                        ₽</span></li>
+                <li class="price-item"><span class="service-name">Омбре</span><span class="service-price">4500 ₽</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="service-category">
+            <h3>Уход и восстановление</h3>
+            <ul class="price-list">
+                <li class="price-item"><span class="service-name">Кератиновое выпрямление</span><span
+                        class="service-price">3500 ₽</span></li>
+                <li class="price-item"><span class="service-name">Ботокс для волос</span><span
+                        class="service-price">3000 ₽</span></li>
+                <li class="price-item"><span class="service-name">Ламинирование волос</span><span
+                        class="service-price">3500 ₽</span></li>
+                <li class="price-item"><span class="service-name">SPA-уход для волос</span><span
+                        class="service-price">2500 ₽</span></li>
+                <li class="price-item"><span class="service-name">Пилинг кожи головы</span><span
+                        class="service-price">2000 ₽</span></li>
+            </ul>
+        </div>
+
+        <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Вернуться на главную</a>
+    </div>
+
+    <!-- ФУТЕР -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">BEAUTY <span>TIME</span></div>
+                <div class="footer-links">
+                    <a href="../index.html">Главная</a>
+                    <a href="about.html">О нас</a>
+                    <a href="reviews.html">Отзывы</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">© 2026 Beauty Time — студия красоты в Альметьевске</div>
+        </div>
+    </footer>
+    <div class="scroll-top-btn" id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

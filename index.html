@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Beauty Time — студия красоты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- ===== ШАПКА ===== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">BEAUTY <span>TIME</span></a>
+            <div class="right-icons">
+                <a href="assets/profile.html" class="profile-icon" id="profileLink">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <label for="menu-toggle" class="menu-overlay"></label>
+                <div class="nav-links">
+                    <label for="menu-toggle" class="close-menu"><i class="fas fa-times"></i></label>
+                    <a href="index.html"><i class="fas fa-home"></i> Главная</a>
+                    <a href="assets/about.html"><i class="fas fa-spa"></i> О нас</a>
+                    <div class="dropdown" id="services-dropdown">
+                        <div class="dropdown-header" onclick="toggleDropdown(event)">
+                            <span><i class="fas fa-cut"></i> Услуги</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="assets/services-hair.html">Парикмахерские услуги</a>
+                            <a href="assets/services-lashes.html">Ресницы</a>
+                            <a href="assets/services-makeup.html">Make up</a>
+                            <a href="assets/services-brows.html">Уход за бровями</a>
+                            <a href="assets/services-nails.html">Ногтевой сервис</a>
+                        </div>
+                    </div>
+                    <a href="assets/reviews.html"><i class="fas fa-star"></i> Отзывы</a>
+                    <a href="assets/contacts.html"><i class="fas fa-phone-alt"></i> Контакты</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== ГЛАВНАЯ СТРАНИЦА ===== -->
+    <div class="page active-page">
+        <!-- Слайдер -->
+        <div class="hero-slider" id="heroSlider">
+            <div class="slider-container" id="sliderContainer"></div>
+            <div class="slider-arrows">
+                <div class="slider-arrow" id="prevSlide"><i class="fas fa-chevron-left"></i></div>
+                <div class="slider-arrow" id="nextSlide"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+
+        <!-- Блок "О салоне" -->
+        <section class="about-salon-section">
+            <div class="container">
+                <div class="about-salon-content">
+                    <h2 class="about-salon-title">Пространство, где рождается ваша красота</h2>
+                    <p class="about-salon-lead">
+                        Beauty Time — это не просто салон красоты. Это место, где вы можете остановить бесконечную
+                        гонку, выдохнуть и позволить себе быть собой. Мы создали пространство, в котором забота о вашей
+                        внешности становится настоящим ритуалом заботы о себе.
+                    </p>
+                    <p class="about-salon-text">
+                        Наши мастера — не просто профессионалы. Это люди, которые слышат ваши желания, понимают
+                        особенности вашей внешности и помогают раскрыть вашу индивидуальность. Мы работаем только с
+                        премиальной косметикой, следим за стерильностью и создаём атмосферу, в которой вам захочется
+                        оставаться.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <i class="fas fa-heart about-feature-icon"></i>
+                            <h3 class="about-feature-title">Индивидуальный подход</h3>
+                            <p class="about-feature-text">Каждый клиент уникален, и мы создаём образ, который подходит
+                                именно вам</p>
+                        </div>
+                        <div class="about-feature-item">
+                            <i class="fas fa-leaf about-feature-icon"></i>
+                            <h3 class="about-feature-title">Натуральная красота</h3>
+                            <p class="about-feature-text">Подчеркиваем природные данные, сохраняя естественность и
+                                гармонию</p>
+                        </div>
+                        <div class="about-feature-item">
+                            <i class="fas fa-shield-alt about-feature-icon"></i>
+                            <h3 class="about-feature-title">Безопасность и качество</h3>
+                            <p class="about-feature-text">Стерильность инструментов и премиальные материалы — наш
+                                стандарт</p>
+                        </div>
+                    </div>
+                    <div class="about-cta-wrap">
+                        <a href="assets/profile.html" class="btn">Записаться на процедуру</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Блок с достижениями/статистикой -->
+        <section class="achievements-section">
+            <div class="container">
+                <div class="achievements-header">
+                    <h2 class="achievements-title">Наши достижения</h2>
+                    <p class="achievements-subtitle">Цифры, которые говорят сами за себя</p>
+                </div>
+                <div class="achievements-grid">
+                    <div class="achievement-item">
+                        <div class="achievement-number">7+</div>
+                        <div class="achievement-label">лет безупречной работы</div>
+                        <div class="achievement-divider"></div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-number">10+</div>
+                        <div class="achievement-label">сертифицированных мастеров</div>
+                        <div class="achievement-divider"></div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-number">5000+</div>
+                        <div class="achievement-label">счастливых клиентов</div>
+                        <div class="achievement-divider"></div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-number">24/7</div>
+                        <div class="achievement-label">удобная онлайн-запись</div>
+                        <div class="achievement-divider"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ФУТЕР -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">BEAUTY <span>TIME</span></div>
+                <div class="footer-links">
+                    <a href="index.html">Главная</a>
+                    <a href="assets/about.html">О нас</a>
+                    <a href="assets/reviews.html">Отзывы</a>
+                    <a href="assets/contacts.html">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © 2026 Beauty Time — студия красоты в Альметьевске
+            </div>
+        </div>
+    </footer>
+    <div class="scroll-top-btn" id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
